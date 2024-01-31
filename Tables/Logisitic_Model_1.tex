@@ -1,0 +1,45 @@
+\begin{table}[htbp]\centering
+\def\sym#1{\ifmmode^{#1}\else\(^{#1}\)\fi}
+\caption{Logistic regression of choice to view the image or blank screen}
+\begin{tabular}{l*{2}{c}}
+\hline\hline
+            &\multicolumn{1}{c}{Logit coeff.}&\multicolumn{1}{c}{Odds ratio}\\
+\hline
+chose\_see\_image&                     &                     \\
+Herd size   &       0.001         &       1.001         \\
+            &     (0.002)         &     (0.002)         \\
+[1em]
+UAA (hectares)&      -0.001         &       0.999         \\
+            &     (0.003)         &     (0.003)         \\
+[1em]
+Calf mortality (\%)&       0.121\sym{**} &       1.129\sym{**} \\
+            &     (0.055)         &     (0.062)         \\
+[1em]
+Calf housing (\%)&       0.010\sym{**} &       1.010\sym{**} \\
+            &     (0.005)         &     (0.005)         \\
+[1em]
+Export surplus calves (\%)&       0.008         &       1.008         \\
+            &     (0.006)         &     (0.006)         \\
+[1em]
+Female (=1) &      -0.837\sym{**} &       0.433\sym{**} \\
+            &     (0.364)         &     (0.158)         \\
+[1em]
+Over age 46 (=1)&       0.160         &       1.173         \\
+            &     (0.267)         &     (0.313)         \\
+[1em]
+3rd educ. level or higher (=1)&       0.822\sym{***}&       2.276\sym{***}\\
+            &     (0.253)         &     (0.576)         \\
+[1em]
+Year survey 2021 (=1)&       0.029         &       1.030         \\
+            &     (0.264)         &     (0.272)         \\
+[1em]
+Constant    &      -0.522         &       0.593         \\
+            &     (0.555)         &     (0.329)         \\
+\hline
+Pseudo R-square&       0.067         &       0.067         \\
+Log-likelihood&    -232.823         &    -232.823         \\
+\hline\hline
+\multicolumn{3}{l}{\footnotesize Standard errors in parentheses}\\
+\multicolumn{3}{l}{\footnotesize \sym{*} \(p<0.10\), \sym{**} \(p<0.05\), \sym{***} \(p<0.01\)}\\
+\end{tabular}
+\end{table}
